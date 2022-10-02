@@ -1,0 +1,39 @@
+@use "base/variables" as v;
+
+.section-technologies {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15rem 0;
+  background-color: v.$color-primary;
+
+  &__texts {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35rem;
+  height: 20rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+  &__front-end,
+  &__design,
+  &__back-end {
+    &--skills {
+      font-size: 3rem;
+    }
+  }
+}

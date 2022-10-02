@@ -1,0 +1,81 @@
+@use "base/variables" as v;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 100;
+  background-color: v.$color-primary;
+  padding: 1rem 1.8rem;
+  box-shadow: v.$shadow;
+
+  &__logo {
+    &--img {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+    }
+  }
+
+  &__btn {
+    display: none;
+    font-size: 3rem;
+    color: v.$color-dark;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__item {
+    &--link {
+      font-size: 1.6rem;
+      color: v.$color-white;
+      transition: all ease 300ms;
+
+      &:hover {
+        border-bottom: 1px solid v.$color-secondary;
+      }
+    }
+  }
+
+  @media (max-width: 940px) {
+    .nav {
+      justify-content: space-between;
+    }
+    &__links {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      background-color: v.$color-primary;
+      text-align: center;
+      flex-direction: column;
+      transition: all ease 300ms;
+    }
+
+    &__item {
+      &--link {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+    &__btn {
+      display: block;
+    }
+  }
+  .show-links {
+    height: 15rem;
+  }
+}

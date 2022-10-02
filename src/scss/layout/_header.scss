@@ -1,0 +1,66 @@
+@use "base/variables" as v;
+
+.section-home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: v.$color-primary;
+  margin: 0 auto;
+
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    &__texts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      h1 {
+        text-align: center;
+        color: #f1f1f1;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    &__btn-about {
+      padding: 1.4rem 6rem;
+      font-size: 2rem;
+      background-color: #c1ffd7;
+      font-weight: bold;
+      color: #b983ff;
+      border-radius: 1rem;
+    }
+
+    &__img img {
+      width: 25rem;
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .home {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &__texts {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        &__img img {
+          width: 25rem;
+          display: block;
+        }
+      }
+    }
+  }
+}

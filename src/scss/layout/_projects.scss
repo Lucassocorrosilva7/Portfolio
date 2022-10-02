@@ -1,0 +1,28 @@
+.section-projects {
+  padding: 15rem 0;
+  background-color: #f4f4f4;
+
+  &__texts h2 {
+    color: #b983ff;
+    text-align: center;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__project {
+    margin: 1rem 2rem;
+    width: 30rem;
+    height: 25rem;
+    background-color: #c1ffd7;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

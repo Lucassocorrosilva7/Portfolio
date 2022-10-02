@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  color: #f1f1f1;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}

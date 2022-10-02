@@ -1,0 +1,41 @@
+@use "base/variables" as v;
+
+.section-about {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: v.$color-secondary;
+  padding: 15rem 0;
+}
+
+.about {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+
+  &__img img {
+    display: none;
+    @media screen and (min-width: 768px) {
+      width: 35rem;
+      display: block;
+    }
+  }
+
+  &__text {
+    h2 {
+      color: v.$color-primary;
+    }
+  }
+
+  &__text {
+    p {
+      font-weight: bold;
+      text-align: left;
+      color: v.$color-dark;
+    }
+  }
+}
