@@ -30,8 +30,8 @@ btnToggle.addEventListener("click", () => {
   links.classList.toggle("show-links");
 });
 
-link.forEach((element) => {
-  element.addEventListener("click", () => {
+link.forEach((elNav) => {
+  elNav.addEventListener("click", () => {
     links.classList.remove("show-links");
   });
 });

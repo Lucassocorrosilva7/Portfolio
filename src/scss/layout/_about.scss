@@ -9,7 +9,7 @@
 }
 
 .about {
-  @media (min-width: 768px) {
+  @media (min-width: v.$tablet) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,7 +19,7 @@
 
   &__img img {
     display: none;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: v.$tablet) {
       width: 35rem;
       display: block;
     }
