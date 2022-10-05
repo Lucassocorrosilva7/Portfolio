@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  color: #f1f1f1;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 76.8rem) {
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 100;
+  background-color: #b983ff;
+  padding: 1rem 1.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.nav__logo--img {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.nav__btn {
+  display: none;
+  font-size: 3rem;
+  color: #303030;
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav__item--link {
+  font-size: 1.6rem;
+  color: #f1f1f1;
+  transition: all ease 300ms;
+}
+.nav__item--link:hover {
+  border-bottom: 1px solid #c1ffd7;
+}
+@media (max-width: 940px) {
+  .nav .nav {
+    justify-content: space-between;
+  }
+  .nav__links {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #b983ff;
+    text-align: center;
+    flex-direction: column;
+    transition: all ease 300ms;
+  }
+  .nav__item--link {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+  }
+  .nav__item--link:hover {
+    border-bottom: none;
+  }
+  .nav__btn {
+    display: block;
+  }
+}
+.nav .show-links {
+  height: 15rem;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 76.8rem) {
+  .nav .show-links {
+    box-shadow: none;
+  }
+}
+
+.section-home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b983ff;
+  margin: 0 auto;
+}
+.section-home .home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-home .home__texts {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.section-home .home__texts h1 {
+  text-align: center;
+  color: #f1f1f1;
+}
+.section-home .home__texts p {
+  text-align: center;
+  background-color: red;
+}
+.section-home .home__btn-about {
+  padding: 1.4rem 6rem;
+  font-size: 2rem;
+  background-color: #c1ffd7;
+  font-weight: bold;
+  color: #b983ff;
+  border-radius: 1rem;
+}
+.section-home .home__img img {
+  display: none;
+}
+.section-home .home__links {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+.section-home .home__links a {
+  display: flex;
+  font-size: 3rem;
+  color: #c1ffd7;
+}
+@media (min-width: 48rem) {
+  .section-home .home__img img {
+    display: block;
+  }
+}
+@media (min-width: 76.8rem) {
+  .section-home .home .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .section-home .home .home__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.section-about {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: #c1ffd7;
+  padding: 15rem 0;
+}
+
+@media (min-width: 76.8rem) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+}
+.about__img img {
+  display: none;
+}
+@media screen and (min-width: 76.8rem) {
+  .about__img img {
+    width: 45rem;
+    display: block;
+  }
+}
+.about__text h2 {
+  color: #b983ff;
+}
+.about__text p {
+  font-weight: bold;
+  text-align: left;
+  color: #303030;
+}
+
+.section-technologies {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15rem 0;
+  background-color: #b983ff;
+}
+.section-technologies__texts {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35rem;
+  height: 20rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.technologies__front-end--skills, .technologies__design--skills, .technologies__back-end--skills {
+  font-size: 3rem;
+}
+
+.section-projects {
+  padding: 15rem 0;
+  background-color: #f1f1f1;
+}
+.section-projects__texts h2 {
+  color: #b983ff;
+  text-align: center;
+}
+
+.projects {
+  max-width: 180rem;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(200px, 500px));
+}
+@media screen and (min-width: 48rem) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(200px, 500px));
+  }
+}
+@media screen and (min-width: 76.8rem) {
+  .projects {
+    grid-template-columns: repeat(3, minmax(200px, 500px));
+  }
+}
+.projects__project {
+  background-color: red;
+  margin: 1rem 2rem;
+  height: 25rem;
+  background-color: #b983ff;
+  border: 8px solid #c1ffd7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.projects__project--description {
+  font-size: 1.4rem;
+}
+.projects__project--link {
+  background-color: #c1ffd7;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  color: #b983ff;
+}
+
+.footer {
+  background-color: #c1ffd7;
+  padding: 5rem;
+}
+.footer__texts {
+  color: #b983ff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 76.8rem) {
+  .footer__texts {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+/*# sourceMappingURL=app.css.map */

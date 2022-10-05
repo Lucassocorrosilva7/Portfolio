@@ -77,5 +77,9 @@
   }
   .show-links {
     height: 15rem;
+    box-shadow: v.$shadow-bottom;
+    @media screen and (min-width: v.$tablet) {
+      box-shadow: none;
+    }
   }
 }

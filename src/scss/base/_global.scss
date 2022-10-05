@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  object-fit: cover;
+}
+
 button {
   border: none;
   outline: 0;

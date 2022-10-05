@@ -11,22 +11,44 @@
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  max-width: 180rem;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(200px, 500px));
+
+  @media screen and (min-width: v.$phone) {
+    grid-template-columns: repeat(2, minmax(200px, 500px));
+  }
+  @media screen and (min-width: v.$tablet) {
+    grid-template-columns: repeat(3, minmax(200px, 500px));
+  }
 
   &__project {
+    background-color: red;
     margin: 1rem 2rem;
-    width: 30rem;
     height: 25rem;
     background-color: v.$color-primary;
     border: 8px solid v.$color-secondary;
     box-shadow: v.$shadow;
     border-radius: 1rem;
+    padding: 2rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+
+    &--description {
+      font-size: 1.4rem;
+    }
+
+    &--link {
+      background-color: v.$color-secondary;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      margin: 2rem 0;
+      color: v.$color-primary;
+    }
   }
 }
