@@ -7,6 +7,7 @@
   align-items: center;
   background-color: v.$color-primary;
   margin: 0 auto;
+  overflow: hidden;
 
   .home {
     display: flex;
@@ -24,11 +25,12 @@
       h1 {
         text-align: center;
         color: #f1f1f1;
+        animation: moveInLeft 1s ease-out;
       }
 
-      p {
+      h3 {
         text-align: center;
-        background-color: red;
+        animation: moveInRight 1s ease-out;
       }
     }
 
@@ -39,16 +41,23 @@
       font-weight: bold;
       color: #b983ff;
       border-radius: 1rem;
+      animation: moveInBottom 1s ease-out;
     }
 
-    &__img img {
-      display: none;
+    &__img {
+      animation: moveInBottom 1s ease-out;
+
+      img {
+        display: none;
+      }
     }
 
     &__links {
       display: flex;
       gap: 3rem;
       margin: 2rem 0;
+      animation: moveInBottom 1s ease-out;
+
       a {
         display: flex;
         font-size: 3rem;
