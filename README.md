@@ -10,6 +10,7 @@
 ## ⚡ Tecnologias utilizadas
 
 - HTML5;
+- Font-awesome;
 - Sass
 - BEM;
 - Javascript;
