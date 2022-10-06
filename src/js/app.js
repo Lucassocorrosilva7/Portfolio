@@ -10,8 +10,6 @@ const btnToggle = document.querySelector(".nav__btn");
 
 btnScrollUp.addEventListener("click", () => {
   sectionHome.scrollIntoView({ behavior: "smooth" });
-
-  console.log("ola");
 });
 
 btnScrollDown.addEventListener("click", () => {
