@@ -31,12 +31,14 @@
     border: 8px solid v.$color-secondary;
     box-shadow: v.$shadow;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-
+    @media screen and (min-width: v.$tablet) {
+      padding: 2rem;
+    }
     &--title {
       font-size: 2.5rem;
       margin-bottom: 2rem;

@@ -2,14 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+  @media screen and (min-width: v.$tablet) {
+    font-size: 4.5rem;
+  }
 }
+
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  @media screen and (min-width: v.$tablet) {
+    font-size: 4rem;
+  }
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  @media screen and (min-width: v.$tablet) {
+    font-size: 2rem;
+  }
 }
 
 p {
