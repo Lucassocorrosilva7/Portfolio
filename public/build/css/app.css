@@ -5,6 +5,19 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #714aa5;
+  border-radius: 1rem;
+}
+
 html {
   font-size: 62.5%;
 }
