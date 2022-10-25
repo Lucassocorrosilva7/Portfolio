@@ -25,6 +25,10 @@
     display: none;
     font-size: 3rem;
     color: v.$color-dark;
+
+    i{
+      color: v.$color-secondary;
+    }
   }
 
   &__links {

@@ -205,6 +205,9 @@ p {
   font-size: 3rem;
   color: #303030;
 }
+.nav__btn i {
+  color: #c1ffd7;
+}
 .nav__links {
   display: flex;
   align-items: center;
