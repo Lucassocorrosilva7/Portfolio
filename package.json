@@ -23,7 +23,19 @@
     "> 1%"
   ],
   "dependencies": {
+    "about": "^2.0.1",
+    "animations": "^0.0.0",
+    "base": "^3.0.0",
+    "footer": "^1.0.0",
+    "global": "^4.4.0",
     "gulp-rename": "^2.0.0",
+    "header": "^0.1.1",
+    "layout": "^2.2.0",
+    "navigation": "^6.1.0",
+    "projects": "^1.6.1",
+    "tech": "^0.1.0",
+    "typography": "^0.16.21",
+    "variables": "^1.0.1",
     "webpack-stream": "^7.0.0"
   }
 }

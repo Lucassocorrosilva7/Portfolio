@@ -293,7 +293,7 @@ p {
           animation: moveInRight 1s ease-out;
 }
 .section-home .home__btn-about {
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: #c1ffd7;
   color: #b983ff;
   text-transform: uppercase;
