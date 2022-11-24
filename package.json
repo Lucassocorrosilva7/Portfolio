@@ -10,13 +10,13 @@
   "author": "Lucas Silva",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.12",
+    "autoprefixer": "^10.4.13",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser-js": "^5.2.2",
-    "sass": "^1.55.0"
+    "sass": "^1.56.1"
   },
   "browserslist": [
     "last 1 version",
