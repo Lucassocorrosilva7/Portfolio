@@ -28,7 +28,7 @@
     margin: 1rem 2rem;
     height: 25rem;
     background-color: v.$color-primary;
-    border: 8px solid v.$color-secondary;
+    border: 4px solid v.$color-secondary;
     box-shadow: v.$shadow;
     border-radius: 1rem;
     padding: 1rem;
@@ -49,12 +49,21 @@
     }
 
     &--link {
-      background-color: v.$color-secondary;
+      background-color: #c1ffd7;
+      color: #b983ff;
+      text-transform: uppercase;
+      border: solid 2px #714aa5;
+      box-shadow: 4px 4px #714aa5;
+      transition: transform 50ms, box-shadow;
       padding: 5px 10px;
       border-radius: 5px;
       font-size: 1.6rem;
       margin: 2rem 0;
-      color: v.$color-primary;
+
+      &:hover {
+          transform: translate(2px, 2px);
+          box-shadow: 2px 2px #714aa5;
+        }
     }
   }
 }

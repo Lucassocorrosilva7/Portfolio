@@ -445,7 +445,7 @@ p {
   margin: 1rem 2rem;
   height: 25rem;
   background-color: #b983ff;
-  border: 8px solid #c1ffd7;
+  border: 4px solid #c1ffd7;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1rem;
@@ -468,11 +468,22 @@ p {
 }
 .projects__project--link {
   background-color: #c1ffd7;
+  color: #b983ff;
+  text-transform: uppercase;
+  border: solid 2px #714aa5;
+  box-shadow: 4px 4px #714aa5;
+  transition: box-shadow, -webkit-transform 50ms;
+  transition: transform 50ms, box-shadow;
+  transition: transform 50ms, box-shadow, -webkit-transform 50ms;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1.6rem;
   margin: 2rem 0;
-  color: #b983ff;
+}
+.projects__project--link:hover {
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  box-shadow: 2px 2px #714aa5;
 }
 
 .footer {
