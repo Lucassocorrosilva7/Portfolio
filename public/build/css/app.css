@@ -469,7 +469,7 @@ p {
 .projects__project--link {
   background-color: #c1ffd7;
   color: #b983ff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border: solid 2px #714aa5;
   box-shadow: 4px 4px #714aa5;
   transition: box-shadow, -webkit-transform 50ms;
