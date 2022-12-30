@@ -8,13 +8,15 @@ const sectionHome = document.querySelector(".section-home");
 const year = document.querySelector(".year");
 const btnToggle = document.querySelector(".nav__btn");
 
-btnScrollUp.addEventListener("click", () => {
-  sectionHome.scrollIntoView({ behavior: "smooth" });
-});
-
-btnScrollDown.addEventListener("click", () => {
+const scrollUp = function () {
   sectionAbout.scrollIntoView({ behavior: "smooth" });
-});
+};
+const scrollDown = function () {
+  sectionAbout.scrollIntoView({ behavior: "smooth" });
+};
+
+btnScrollUp.addEventListener("click", scrollUp);
+btnScrollDown.addEventListener("click", scrollDown);
 
 links.addEventListener("click", function (e) {
   e.preventDefault();
@@ -28,11 +30,11 @@ btnToggle.addEventListener("click", () => {
   links.classList.toggle("show-links");
 });
 
-link.forEach((elNav) => {
-  elNav.addEventListener("click", () => {
+link.forEach((elementLinks) => {
+  elementLinks.addEventListener("click", () => {
     links.classList.remove("show-links");
   });
 });
 
-const date = new Date();
-year.innerHTML = date.getFullYear();
+const full_year = new Date();
+year.innerHTML = full_year.getFullYear();
