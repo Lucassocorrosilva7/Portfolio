@@ -9,7 +9,7 @@ const year = document.querySelector(".year");
 const btnToggle = document.querySelector(".nav__btn");
 
 const scrollUp = function () {
-  sectionAbout.scrollIntoView({ behavior: "smooth" });
+  sectionHome.scrollIntoView({ behavior: "smooth" });
 };
 const scrollDown = function () {
   sectionAbout.scrollIntoView({ behavior: "smooth" });
