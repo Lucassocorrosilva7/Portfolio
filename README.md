@@ -1,8 +1,12 @@
 # Portófolio - Lucas Silva
 
+Olá sejam bem-vindos ao meu portfólio 👇🏻
+
+![Portfólio](./src/images/port.png "Portfólio")
+
 ## 💻 Seções
 
-- Ínicio
+- Início
 - Sobre
 - Tecnologias
 - Projetos
