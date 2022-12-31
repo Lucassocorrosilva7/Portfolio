@@ -1,4 +1,4 @@
-# Portófolio - Lucas Silva
+# Portfólio - Lucas Silva
 
 Olá sejam bem-vindos ao meu portfólio 👇🏻
 
