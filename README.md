@@ -2,7 +2,7 @@
 
 ## 💻 Seções
 
-- Ínicio
+- Início
 - Sobre
 - Tecnologias
 - Projetos
