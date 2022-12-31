@@ -1,4 +1,4 @@
-# Portófolio - Lucas Silva
+# Portfólio - Lucas Silva
 
 ## 💻 Seções
 
