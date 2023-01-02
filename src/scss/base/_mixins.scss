@@ -1,0 +1,29 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexDirection($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin btn($py, $px, $size: 1.6rem) {
+  background-color: #c1ffd7;
+  color: #b983ff;
+  text-transform: capitalize;
+  border: solid 2px #714aa5;
+  box-shadow: 4px 4px #714aa5;
+  transition: transform 50ms, box-shadow;
+  padding: $py $px;
+  border-radius: 5px;
+  font-size: $size;
+  margin: 2rem 0;
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px #714aa5;
+  }
+}
