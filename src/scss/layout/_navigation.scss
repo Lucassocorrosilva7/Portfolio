@@ -9,7 +9,7 @@
   margin: 0 auto;
   position: fixed;
   z-index: 100;
-  background-color: v.$color-primary;
+  background-color: v.$color-dark;
   padding: 1rem 1.8rem;
   box-shadow: v.$shadow;
 
@@ -60,7 +60,7 @@
       height: 0;
       overflow: hidden;
       width: 100%;
-      background-color: v.$color-primary;
+      background-color: v.$color-dark;
       text-align: center;
       flex-direction: column;
       transition: all ease 300ms;

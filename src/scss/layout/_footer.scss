@@ -1,11 +1,11 @@
 @use "../base/variables" as v;
 
 .footer {
-  background-color: v.$color-secondary;
+  background: v.$color-dark;
   padding: 5rem;
 
   &__texts {
-    color: v.$color-primary;
+    color: v.$color-white;
     text-align: center;
     display: flex;
     flex-direction: column;

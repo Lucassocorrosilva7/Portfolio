@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: v.$color-primary-dark;
+  background: v.$color-primary;
   border-radius: 1rem;
 }
 
@@ -46,11 +46,8 @@ li {
 }
 
 body {
-  background-color: #f1f1f1;
   font-family: "Poppins", sans-serif;
   color: #f1f1f1;
-  background-repeat: no-repeat;
-  min-height: 100vh;
 }
 
 .content {

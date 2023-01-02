@@ -1,16 +1,16 @@
 @use "base/variables" as v;
+@use "base/mixins" as m;
 
 .section-projects {
   padding: 15rem 0 5rem 0;
-  background-color: v.$color-white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #303030e2;
+  @include m.flexDirection(column);
+
 
   &__texts h2 {
-    color: v.$color-primary;
+    color: v.$color-white;
     text-align: center;
+    margin-bottom: 5rem;
   }
 }
 
@@ -20,21 +20,17 @@
   display: grid;
   place-content: center;
   grid-template-columns: repeat(1, minmax(200px, 500px));
-
   @media screen and (min-width: v.$phone) {
     grid-template-columns: repeat(2, minmax(200px, 500px));
   }
   @media screen and (min-width: v.$tablet) {
-    grid-template-columns: repeat(3, minmax(200px, 500px));
+    grid-template-columns: repeat(3, minmax(200px, 400px));
   }
 
   &__project {
     margin: 1rem 2rem;
-    height: 25rem;
-    background-color: v.$color-primary;
-    border: 4px solid v.$color-secondary;
+    border: 2px solid v.$color-secondary;
     box-shadow: v.$shadow;
-    border-radius: 1rem;
     padding: 1rem;
     display: flex;
     align-items: flex-start;
@@ -53,39 +49,11 @@
     }
 
     &--link {
-      background-color: #c1ffd7;
-      color: #b983ff;
-      text-transform: capitalize;
-      border: solid 2px #714aa5;
-      box-shadow: 4px 4px #714aa5;
-      transition: transform 50ms, box-shadow;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 1.6rem;
-      margin: 2rem 0;
-
-      &:hover {
-          transform: translate(2px, 2px);
-          box-shadow: 2px 2px #714aa5;
-        }
+     @include m.btn(5px,10px);
     }
   }
 
   &__button{
-    background-color: #c1ffd7;
-      color: #b983ff;
-      text-transform: capitalize;
-      border: solid 2px #714aa5;
-      box-shadow: 4px 4px #714aa5;
-      transition: transform 50ms, box-shadow;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 1.6rem;
-      margin: 2rem 0;
-
-      &:hover {
-          transform: translate(2px, 2px);
-          box-shadow: 2px 2px #714aa5;
-        }
+  @include m.btn(5px, 10px);
   }
 }

@@ -1,19 +1,14 @@
 @use "base/variables" as v;
+@use "base/mixins" as m;
 
 .section-about {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  background-color: v.$color-secondary;
+  background: v.$color-dark-transparent;
   padding: 15rem 0;
 }
 
 .about {
   @media (min-width: v.$tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    @include m.flexDirection(row-reverse);
     gap: 4rem;
   }
 
@@ -27,7 +22,7 @@
 
   &__text {
     h2 {
-      color: v.$color-primary;
+      color: v.$color-white;
     }
   }
 
@@ -35,7 +30,7 @@
     p {
       font-weight: bold;
       text-align: left;
-      color: v.$color-dark;
+      color: v.$color-white;
     }
   }
 }

@@ -4,12 +4,19 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 15rem 0;
-  background-color: v.$color-primary;
+  padding: 10rem 0;
+  background-color: v.$color-dark;
+
+  @media screen and (min-width: v.$tablet) {
+    padding: 15rem 0;
+  }
 
   &__texts {
     text-align: center;
     margin-bottom: 4rem;
+    h2 {
+      text-decoration: underline wavy v.$color-primary;
+    }
   }
 }
 
