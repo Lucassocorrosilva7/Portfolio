@@ -501,6 +501,34 @@ p {
           transform: translate(2px, 2px);
   box-shadow: 2px 2px #714aa5;
 }
+.projects__contact {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c1ffd7;
+  padding: 5rem;
+  max-width: 70%;
+  border-radius: 1rem;
+}
+.projects__contact a {
+  background-color: #c1ffd7;
+  color: #b983ff;
+  text-transform: capitalize;
+  border: solid 2px #714aa5;
+  box-shadow: 4px 4px #714aa5;
+  transition: box-shadow, -webkit-transform 50ms;
+  transition: transform 50ms, box-shadow;
+  transition: transform 50ms, box-shadow, -webkit-transform 50ms;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  align-self: flex-start;
+}
+.projects__contact a:hover {
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  box-shadow: 2px 2px #714aa5;
+}
 
 .footer {
   background: #303030;

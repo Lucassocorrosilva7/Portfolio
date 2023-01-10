@@ -6,7 +6,6 @@
   background-color: #303030e2;
   @include m.flexDirection(column);
 
-
   &__texts h2 {
     color: v.$color-white;
     text-align: center;
@@ -49,11 +48,25 @@
     }
 
     &--link {
-     @include m.btn(5px,10px);
+      @include m.btn(5px, 10px);
     }
   }
 
-  &__button{
-  @include m.btn(5px, 10px);
+  &__button {
+    @include m.btn(5px, 10px);
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid v.$color-secondary;
+    padding: 5rem;
+    max-width: 70%;
+    border-radius: 1rem;
+
+    a {
+      @include m.btn(5px, 10px);
+      align-self: flex-start;
+    }
   }
 }
