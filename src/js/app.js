@@ -1,12 +1,12 @@
 "use strict";
 const links = document.querySelector(".nav__links");
 const link = document.querySelectorAll(".nav__item--link");
-const btnScrollDown = document.querySelector(".home__btn-about");
+const btnScrollDown = document.querySelector(".scrolldown");
 const btnScrollUp = document.querySelector(".link-home");
 const sectionAbout = document.querySelector(".section-about");
 const sectionHome = document.querySelector(".section-home");
 const year = document.querySelector(".year");
-const btnToggle = document.querySelector(".nav__btn");
+const btnToggle = document.querySelector(".menu");
 
 const scrollUp = function () {
   sectionHome.scrollIntoView({ behavior: "smooth" });
@@ -26,13 +26,16 @@ links.addEventListener("click", function (e) {
   }
 });
 
+
 btnToggle.addEventListener("click", () => {
   links.classList.toggle("show-links");
+
 });
 
 link.forEach((elementLinks) => {
   elementLinks.addEventListener("click", () => {
     links.classList.remove("show-links");
+    btnToggle.classList.toggle("opened");
   });
 });
 
