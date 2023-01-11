@@ -19,9 +19,11 @@
   display: grid;
   place-content: center;
   grid-template-columns: repeat(1, minmax(200px, 500px));
+
   @media screen and (min-width: v.$phone) {
     grid-template-columns: repeat(2, minmax(200px, 500px));
   }
+
   @media screen and (min-width: v.$tablet) {
     grid-template-columns: repeat(3, minmax(200px, 400px));
   }
@@ -35,9 +37,12 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 4rem;
+
     @media screen and (min-width: v.$tablet) {
       padding: 2rem;
     }
+
     &--title {
       font-size: 2.5rem;
       margin-bottom: 2rem;
@@ -52,17 +57,33 @@
     }
   }
 
-  &__button {
-    @include m.btn(5px, 10px);
-  }
+ 
 
   &__contact {
     display: flex;
     flex-direction: column;
-    border: 1px solid v.$color-secondary;
     padding: 5rem;
+    cursor: pointer;
     max-width: 70%;
-    border-radius: 1rem;
+    background: v.$color-primary;
+    border-radius: 5px;
+    border: 1px solid rgb(193, 255, 215, .7);
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgb(193, 255, 215, .7);
+
+    &:hover {
+      box-shadow: -12px 12px 2px -1px rgb(193, 255, 215, .7);
+    }
+
+    h3 {
+      cursor: default;
+
+      span {
+        display: block;
+        font-size: 4rem;
+        text-transform: uppercase;
+      }
+    }
 
     a {
       @include m.btn(5px, 10px);
