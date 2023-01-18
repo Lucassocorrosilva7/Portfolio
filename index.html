@@ -21,11 +21,9 @@
             <div class="nav__logo">
                 <img class="nav__logo--img link-home" src="src/images/logo.svg" alt="logo">
             </div>
-            <button class="menu"
-                onclick="
+            <button class="menu" onclick="
                 this.classList.toggle('opened');
-                this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-                aria-label="Main Menu">
+                this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                 <svg width="50" height="50" viewBox="0 0 100 100">
                     <path class="line line1"
                         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -35,10 +33,10 @@
                 </svg>
             </button>
             <ul class="nav__links">
-                <li class="nav__item"><a class="nav__item--link" href="#home">Início</a></li>
-                <li class="nav__item"><a class="nav__item--link" href="#about">Sobre</a></li>
-                <li class="nav__item"><a class="nav__item--link" href="#technologies">Conhecimentos</a></li>
-                <li class="nav__item"><a class="nav__item--link" href="#projects">Projetos</a></li>
+                <li class="nav__item"><a class="nav__item--link" data-href="#home">Início</a></li>
+                <li class="nav__item"><a class="nav__item--link" data-href="#about">Sobre</a></li>
+                <li class="nav__item"><a class="nav__item--link" data-href="#technologies">Conhecimentos</a></li>
+                <li class="nav__item"><a class="nav__item--link" data-href="#projects">Projetos</a></li>
             </ul>
         </nav>
         <section class="section-home" id="home">
@@ -71,10 +69,10 @@
         <div class="about content">
             <article class="about__text">
                 <h2>Quem Sou</h2>
-                <p>Oi, meu nome é Lucas Silva, desenvolvedor front-end e designer. Deixe-me dar-lhe uma pequena
-                    introdução de mim mesmo, com todos os fatos-chave. Sou um amante da tecnologia, onde estou focado em
-                    front-end principalmente no ecossistema Javascript, mas também possuo conhecimento em back-end e
-                    estou sempre aberto a aprender coisas novas.
+                <p>Olá, meu nome é Lucas Silva e sou desenvolvedor front-end e UI designer. Gostaria de me apresentar e
+                    compartilhar alguns fatos-chave sobre mim. Sou apaixonado por tecnologia e me dedico principalmente
+                    ao desenvolvimento front-end, especialmente no ecossistema JavaScript. Estou sempre buscando
+                    aprender e crescer na minha área para oferecer soluções criativas e eficientes para meus projetos.
                 </p>
             </article>
             <article class="about__img">
