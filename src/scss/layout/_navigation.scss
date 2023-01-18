@@ -36,6 +36,7 @@
       font-size: 1.6rem;
       color: v.$color-white;
       transition: all ease 300ms;
+      cursor: pointer;
 
       &:hover {
         border-bottom: 1px solid v.$color-secondary;

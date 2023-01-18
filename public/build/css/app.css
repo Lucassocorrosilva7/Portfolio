@@ -90,6 +90,15 @@ p {
   }
 }
 
+span {
+  font-size: 2em;
+}
+@media screen and (min-width: 76.8rem) {
+  span {
+    font-size: 3rem;
+  }
+}
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -209,6 +218,7 @@ p {
   font-size: 1.6rem;
   color: #f1f1f1;
   transition: all ease 300ms;
+  cursor: pointer;
 }
 .nav__item--link:hover {
   border-bottom: 1px solid #c1ffd7;
@@ -655,7 +665,6 @@ p {
 }
 .projects__contact h3 span {
   display: block;
-  font-size: 4rem;
   text-transform: uppercase;
 }
 .projects__contact a {
