@@ -7,29 +7,24 @@ const sectionAbout = document.querySelector(".section-about");
 const sectionHome = document.querySelector(".section-home");
 const year = document.querySelector(".year");
 const btnToggle = document.querySelector(".menu");
+let docTitle = document.title;
 
-const scrollUp = function () {
-  sectionHome.scrollIntoView({ behavior: "smooth" });
-};
-const scrollDown = function () {
-  sectionAbout.scrollIntoView({ behavior: "smooth" });
-};
+const scrollUp = () => sectionHome.scrollIntoView({ behavior: "smooth" });
+const scrollDown = () => sectionAbout.scrollIntoView({ behavior: "smooth" });
 
-btnScrollUp.addEventListener("click", scrollUp);
-btnScrollDown.addEventListener("click", scrollDown);
+btnScrollUp.addEventListener("click", scrollUp, { passive: true });
+btnScrollDown.addEventListener("click", scrollDown, { passive: true });
 
-links.addEventListener("click", function (e) {
+links.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target.classList.contains("nav__item--link")) {
-    const id = e.target.getAttribute("href");
+    const id = e.target.dataset.href;
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
 
-
 btnToggle.addEventListener("click", () => {
   links.classList.toggle("show-links");
-
 });
 
 link.forEach((elementLinks) => {
@@ -41,3 +36,11 @@ link.forEach((elementLinks) => {
 
 const full_year = new Date();
 year.innerHTML = full_year.getFullYear();
+
+window.addEventListener("blur", () => {
+  document.title = "Volte 😪";
+});
+
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
