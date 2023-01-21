@@ -17,7 +17,7 @@ git clone https://github.com/Lucassocorrosilva7/Portfolio.git
 Entrar na pasta utilizando o comando:
 
 ```
-cd Porfolio-main
+cd Portfolio-main
 ```
 
 Instale as dependências com o comando:
