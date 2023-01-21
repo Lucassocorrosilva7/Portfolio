@@ -1,17 +1,45 @@
-# Portfólio - Lucas Silva
-
-### Olá sejam bem-vindos ao meu portfólio 👇🏻
+<h1 align="center">
+Portfólio Lucas silva 💼
+</h1>
 
 ![Portfólio](./src/images/port.png "Portfólio")
 
-## 💻 Seções
+<h4 align="center"><a href="https://lucasssilva.netlify.app/">Clique para visitar o projeto</a></h4>
+
+## 🛠️ Instalação do Frontend
+
+Clone este repositório usando o comando
+
+```
+git clone https://github.com/Lucassocorrosilva7/Portfolio.git
+```
+
+Entrar na pasta utilizando o comando:
+
+```
+cd Projeto-Porfolio-main
+```
+
+Instale as dependências com o comando:
+
+```
+npm i
+```
+
+Para executar o gulp utilize o comando:
+
+```
+gulp dev
+```
+
+## 💻 - Seções
 
 - Início
 - Sobre
 - Tecnologias
 - Projetos
 
-## ⚡ Tecnologias utilizadas
+## ⚡ - Tecnologias utilizadas
 
 - HTML5;
 - Font-awesome;
