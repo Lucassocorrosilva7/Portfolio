@@ -706,4 +706,7 @@ span {
     flex-direction: row;
   }
 }
+.footer__texts p span {
+  font-size: 1.6rem;
+}
 /*# sourceMappingURL=app.css.map */
