@@ -14,7 +14,7 @@ function css(done) {
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemaps.write("."))
-    .pipe(dest("public/build/css"));
+    .pipe(dest("build/css"));
 
   done();
 }
@@ -40,7 +40,7 @@ function js() {
     .pipe(terser())
     .pipe(sourcemaps.write("."))
     .pipe(rename({ suffix: ".min" }))
-    .pipe(dest("./public/build/js"));
+    .pipe(dest("build/js"));
 }
 
 function dev(done) {

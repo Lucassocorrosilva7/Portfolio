@@ -23,6 +23,7 @@
     "> 1%"
   ],
   "dependencies": {
+    "gulp-rename": "^2.0.0",
     "webpack-stream": "^7.0.0"
   }
 }
